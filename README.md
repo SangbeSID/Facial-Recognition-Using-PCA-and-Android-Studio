@@ -1,2 +1,5 @@
-<h3><u> Image Processing </u></h3>
-Build a facial recognition application using Android Studio and PCA method.
+# Facial Recognition using PCA algorithm
+
+Build a facial recognition application by using Android Studio and PCA method.
+Etablish a Client-Server architecture for the communication.
+The database is stored on the server which runs the PCA script.
