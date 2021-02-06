@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+    <ImageView
+        android:padding="10dp"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/appanonym"
+        android:id="@+id/imageView3" />
+
+    <TextView
+        android:gravity="center|center"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="You are"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:gravity="center|center"
+        android:id="@+id/userFindField"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textSize="20sp"/>
+</LinearLayout>

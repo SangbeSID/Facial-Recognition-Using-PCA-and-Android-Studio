@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Ajout d'un bouton 'Home' dans l'Action Bar -->
+    <item
+        android:id="@+id/menuHomeButton"
+        android:icon="@drawable/appicon_white"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+
+    <!-- Ajout de boutons 'Regroupés' dans l'Action Bar -->
+    <item
+        android:id="@+id/menuFindMyFaceButton"
+        android:title="Find my face"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/menuInsertMyFaceButton"
+        android:title="Insert my face"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/menuSettingsButton"
+        android:title="Settings"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/menuAboutButton"
+        android:title="About"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+</menu>

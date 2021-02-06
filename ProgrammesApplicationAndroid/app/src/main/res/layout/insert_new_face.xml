@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CameraView"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1.05">
+
+    <FrameLayout
+        android:id="@+id/camera_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:maxHeight="400dp"
+        android:layout_weight="0.55">
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:weightSum="1">
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                android:id="@+id/TakePictureButton2"
+                android:layout_weight="0.5" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/ic_menu_revert"
+                android:id="@+id/TakeAgainPictureButton2"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.015" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:weightSum="1">
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Firstname : "
+            android:id="@+id/textNewFaceFirstname"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/newFaceFirstname"
+                android:background="?attr/colorControlHighlight"
+                android:layout_weight="0.5"
+                android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.05" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lastname :"
+            android:id="@+id/textNewFaceLastname"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:id="@+id/newFaceLastname"
+            android:background="?attr/colorControlHighlight"
+            android:layout_weight="0.5"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <Space
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.030" />
+
+    <Button
+        android:text="OK"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/SendNewUserButton"
+        android:layout_weight="0.10" />
+
+</LinearLayout>

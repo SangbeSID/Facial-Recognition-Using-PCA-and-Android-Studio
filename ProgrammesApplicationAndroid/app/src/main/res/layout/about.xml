@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_centerVertical="true"
+    android:weightSum="5">
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_weight="3"
+        android:gravity="center|center"
+        android:maxWidth="310dp"
+        android:maxHeight="310dp"
+        android:padding="10dp"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:id="@+id/imageView5"
+        app:srcCompat="@drawable/appabout"
+
+    />
+
+    <TextView
+        android:padding="10dp"
+        android:layout_weight="2"
+        android:gravity="center|center"
+        android:text="FaceFinder a été conçue par les étudiants de Polytech Annecy-Chambéry !\n
+        Cette application s'inscrit dans le module PROJ942 de la formation IAI. Pour toute question sur l'application contactez-nous à l'adresse : \n\n jordi.garnacho@etu.univ-smb.fr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+    />
+</LinearLayout>

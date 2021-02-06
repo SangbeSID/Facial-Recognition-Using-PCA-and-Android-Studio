@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5">
+
+
+        <ImageView
+            android:layout_gravity="center|center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/appsettings"
+            android:id="@+id/imageView2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+
+        <Space
+            android:layout_gravity="center|center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Server IP : "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textIpServer"
+            android:layout_weight="0.35"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="3"
+            android:id="@+id/ipServer1"
+            android:background="?attr/colorControlHighlight"
+            android:layout_weight="0.15"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:text="."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDot1"
+            android:layout_weight="0.025"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="3"
+            android:id="@+id/ipServer2"
+            android:background="?attr/colorControlHighlight"
+            android:layout_weight="0.15"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:text="."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDot2"
+            android:layout_weight="0.025"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="3"
+            android:id="@+id/ipServer3"
+            android:background="?attr/colorControlHighlight"
+            android:layout_weight="0.15"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:text="."
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDot3"
+            android:layout_weight="0.025"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="3"
+            android:id="@+id/ipServer4"
+            android:background="?attr/colorControlHighlight"
+            android:layout_weight="0.15"
+            android:textSize="25sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Server Port : "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textPortServer"
+            android:layout_weight="0.35"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="4"
+            android:id="@+id/portServer"
+            android:background="?attr/colorControlHighlight"
+            android:layout_weight="0.15"
+            android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <Button
+            android:text="OK"
+            android:layout_gravity="bottom|center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/validSettingsButton"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+    </LinearLayout>
+</LinearLayout>
